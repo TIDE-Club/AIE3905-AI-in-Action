@@ -3,7 +3,7 @@
   const app = document.getElementById('app');
 
   // Replace this URL with the Feishu questionnaire when registration opens.
-  const REGISTRATION_FORM_URL = 'https://example.com/aie3905-registration-form';
+  const REGISTRATION_FORM_URL = 'https://tideclub26.feishu.cn/share/base/form/shrcn751dWIgzJimMjFGiXvSThd';
 
   function esc(value) {
     return String(value ?? '')
