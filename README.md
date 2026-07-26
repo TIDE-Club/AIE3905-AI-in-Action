@@ -1,16 +1,12 @@
 # lecture.github.io
 
-AIE 3905《AI与社会实践 I》课程信息与平行教学班报名静态网站。
+AIE 3905《AI与社会实践 I》中英文课程信息静态网站。
 
 ## 内容维护
 
-- 课程与教学班信息：`js/data.js`
-- 报名问卷占位链接：`js/app.js` 中的 `REGISTRATION_FORM_URL`
+- 中英文课程信息：`js/data.js`
+- 页面渲染与语言切换：`js/app.js`
 - 页面样式：`css/style.css`
+- 下载文件：`assets/files/AIE3905-20260701.pdf`
 
-## 页面路由
-
-- `#/`：课程首页
-- `#/sections`：平行教学班列表
-- `#/sections/<sectionId>`：平行教学班详情
-- `#/course`：课程总纲
+网站采用单页阅读模式，不包含内部页面跳转。
