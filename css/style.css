@@ -66,10 +66,10 @@ h1, h2, h3, h4 { line-height: 1.25; }
 .hero-primary { min-width: 0; }
 .hero-kicker { color: var(--primary); font-size: 13px; font-weight: 750; margin-bottom: 16px; }
 .hero-primary h1 { font-size: 52px; }
-.hero-title-en { margin-top: 9px; color: var(--muted); font-size: 18px; font-weight: 700; }
+.hero-title-secondary { margin-top: 9px; color: var(--muted); font-size: 18px; font-weight: 700; }
 .hero-information { padding-left: 48px; border-left: 1px solid var(--line); }
 .hero-slogan { font-size: 22px; font-weight: 750; line-height: 1.45; }
-.hero-slogan-en { margin-top: 6px; color: var(--muted); font-size: 14px; }
+.hero-slogan-secondary { margin-top: 6px; color: var(--muted); font-size: 14px; }
 .hero-meta { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 22px; }
 .hero-meta span {
   padding: 6px 9px;
@@ -154,6 +154,19 @@ h1, h2, h3, h4 { line-height: 1.25; }
   font-size: 15px;
   line-height: 1.75;
 }
+.document-list {
+  margin: 12px 0 0;
+  padding-left: 24px;
+  color: #35445a;
+}
+.document-list li {
+  margin-top: 8px;
+  padding-left: 4px;
+  font-size: 16px;
+  line-height: 1.9;
+}
+.document-list li::marker { color: var(--primary); }
+.course-document[lang="en"] .document-list li { line-height: 1.78; }
 
 .site-footer { background: #111b2c; color: rgba(255,255,255,.7); padding: 34px 0; }
 .footer-grid { display: flex; justify-content: space-between; align-items: center; gap: 24px; }
@@ -174,7 +187,7 @@ h1, h2, h3, h4 { line-height: 1.25; }
   .brand-text { display: none; }
   .course-hero-inner { padding: 44px 0; }
   .hero-primary h1 { font-size: 38px; overflow-wrap: anywhere; }
-  .hero-title-en { font-size: 16px; }
+  .hero-title-secondary { font-size: 16px; }
   .hero-slogan { font-size: 20px; }
   .hero-actions { grid-template-columns: 1fr; }
   .hero-action-button { width: 100%; }
@@ -187,6 +200,7 @@ h1, h2, h3, h4 { line-height: 1.25; }
   .document-heading { margin-top: 38px; font-size: 23px; }
   .document-section-title { margin-top: 32px; font-size: 19px; overflow-wrap: anywhere; }
   .document-paragraph { font-size: 15px; text-align: left; }
+  .document-list li { font-size: 15px; }
   .footer-grid { align-items: flex-start; flex-direction: column; }
   .footer-note { text-align: left; }
 }

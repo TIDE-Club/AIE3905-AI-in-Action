@@ -4,10 +4,15 @@ window.LECTURE_DATA = {
     "titleZh": "AI与社会实践 I",
     "titleEn": "AI and Society in Action I",
     "school": "香港中文大学（深圳）人工智能学院",
+    "schoolEn": "School of Artificial Intelligence, The Chinese University of Hong Kong, Shenzhen",
     "term": "2026 秋季",
+    "termEn": "Fall 2026",
     "units": "3 学分",
+    "unitsEn": "3 Credits",
     "hours": "每周 3 小时",
+    "hoursEn": "3 Hours per Week",
     "format": "讲座、实验 / 工作坊与实地考察",
+    "formatEn": "Lectures, Labs / Workshops and Field Trips",
     "slogan": "在真实世界中学习AI，在实践中理解AI",
     "sloganEn": "AI in the Real World, Learning by Doing."
   },
@@ -66,18 +71,22 @@ window.LECTURE_DATA = {
         "text": "本平行教学班拟重点关注以下校园痛点场景："
       },
       {
+        "listItem": true,
         "style": "Normal",
         "text": "兴趣社团运营与管理：招新、活动策划、宣传、成员管理、资料沉淀、换届交接、审核、评优。关注重复劳动、信息低效、经验断层、管理负担过重等问题。"
       },
       {
+        "listItem": true,
         "style": "Normal",
         "text": "行政流程优化：通知传达、材料整理、信息统计、常见问题答疑、活动组织、流程咨询、反馈收集。聚焦可借助轻量化AI工具改善的环节。"
       },
       {
+        "listItem": true,
         "style": "Normal",
         "text": "校园公共服务与学生支持：选课、活动参与、资源申请、组织协作、信息查询。关注流程复杂、信息分散、响应不及时等问题。"
       },
       {
+        "listItem": true,
         "style": "Normal",
         "text": "校园AI使用与治理：探讨AI在材料整理、评审辅助、反馈总结、项目管理等环节的适用性，明确哪些场景适合AI辅助、哪些必须保留人的判断，并建立AI使用的边界、规范与责任机制。"
       },
@@ -146,10 +155,6 @@ window.LECTURE_DATA = {
         "text": "平行教学班S05：《AI与视觉交互艺术》"
       },
       {
-        "style": "Normal",
-        "text": "合作书院：学勤书院"
-      },
-      {
         "style": "Body Text",
         "text": "本平行教学班聚焦人工智能、视觉艺术、交互媒体与数字创意的深度融合，采用“理论讲授、AI编程实践、艺术工作坊、项目创作与公共展演”相结合的教学模式，引导学生利用人工智能与创意编程技术完成具有艺术表达力和交互体验的视觉艺术作品创作。课程涵盖生成式人工智能、创意编程（Creative Coding）、计算机视觉、实时图形、交互装置、大语言模型、多模态交互、智能艺术系统等前沿技术，培养学生将AI技术转化为公共艺术表达和文化传播作品的能力。"
       },
@@ -216,20 +221,24 @@ window.LECTURE_DATA = {
         "text": "This parallel class section plans to focus on the following types of campus pain points:"
       },
       {
+        "listItem": true,
         "style": "Normal",
-        "text": "1. Operations and management of interest-based student clubs, including recruitment, event planning, promotion, member management, knowledge archiving, leadership transitions, activity review, and club evaluations. The focus is on issues such as repetitive work, inefficient information flow, difficulty in passing down experience, and excessive management burden."
+        "text": "Operations and management of interest-based student clubs, including recruitment, event planning, promotion, member management, knowledge archiving, leadership transitions, activity review, and club evaluations. The focus is on issues such as repetitive work, inefficient information flow, difficulty in passing down experience, and excessive management burden."
       },
       {
+        "listItem": true,
         "style": "Normal",
-        "text": "2. Workflow optimization for administrative units such as colleges, residential colleges, or administrative departments, including notification dissemination, document organization, data collection, FAQ responses, event organization, process consultation, and feedback gathering. The focus is on identifying steps that can be improved through lightweight AI tools."
+        "text": "Workflow optimization for administrative units such as colleges, residential colleges, or administrative departments, including notification dissemination, document organization, data collection, FAQ responses, event organization, process consultation, and feedback gathering. The focus is on identifying steps that can be improved through lightweight AI tools."
       },
       {
+        "listItem": true,
         "style": "Normal",
-        "text": "3. Campus public services and student support scenarios, including course registration, event participation, resource application, organizational collaboration, and information inquiry. The focus is on issues such as complex procedures, fragmented information, and untimely responses that students encounter in these processes."
+        "text": "Campus public services and student support scenarios, including course registration, event participation, resource application, organizational collaboration, and information inquiry. The focus is on issues such as complex procedures, fragmented information, and untimely responses that students encounter in these processes."
       },
       {
+        "listItem": true,
         "style": "Normal",
-        "text": "4. Campus AI usage and governance scenarios, exploring whether AI can be involved in document organization, evaluation assistance, feedback summarization, and project management; determining which scenarios are suitable for AI assistance and which must retain human judgment; and establishing the boundaries, norms, and accountability mechanisms for AI use on campus."
+        "text": "Campus AI usage and governance scenarios, exploring whether AI can be involved in document organization, evaluation assistance, feedback summarization, and project management; determining which scenarios are suitable for AI assistance and which must retain human judgment; and establishing the boundaries, norms, and accountability mechanisms for AI use on campus."
       },
       {
         "style": "Normal",
@@ -298,10 +307,6 @@ window.LECTURE_DATA = {
       {
         "style": "Normal",
         "text": "Parallel Class Section S05: AI and Visual Interactive Arts"
-      },
-      {
-        "style": "Normal",
-        "text": "Collaboration with Diligentia College and University Arts Center"
       },
       {
         "style": "Body Text",
