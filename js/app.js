@@ -2,6 +2,7 @@
   const DATA = window.LECTURE_DATA || { course: {}, documents: { zh: [], en: [] } };
   const app = document.getElementById('app');
   const DOWNLOAD_URL = './assets/files/AIE3905-20260701.pdf';
+  const REGISTRATION_URL = 'https://tideclub26.feishu.cn/share/base/form/shrcn751dWIgzJimMjFGiXvSThd';
   let activeLanguage = 'zh';
 
   function esc(value) {
@@ -63,10 +64,16 @@
               <span>${esc(course.hours)}</span>
               <span>${esc(course.format)}</span>
             </div>
-            <a class="download-button" href="${DOWNLOAD_URL}" download="AIE3905-20260701.pdf">
-              <span aria-hidden="true">↓</span>
-              下载课程信息文件
-            </a>
+            <div class="hero-actions">
+              <a class="hero-action-button download-button" href="${DOWNLOAD_URL}" download="AIE3905-20260701.pdf">
+                <span aria-hidden="true">↓</span>
+                下载课程信息文件
+              </a>
+              <a class="hero-action-button registration-button" href="${REGISTRATION_URL}" target="_blank" rel="noopener noreferrer">
+                课程报名
+                <span aria-hidden="true">→</span>
+              </a>
+            </div>
           </div>
         </div>
       </section>

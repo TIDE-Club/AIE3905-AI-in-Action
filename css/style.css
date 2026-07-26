@@ -80,23 +80,30 @@ h1, h2, h3, h4 { line-height: 1.25; }
   font-size: 13px;
   font-weight: 700;
 }
-.download-button {
-  min-height: 42px;
+.hero-actions {
   margin-top: 24px;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  gap: 10px;
+}
+.hero-action-button {
+  min-height: 42px;
   padding: 9px 14px;
   display: inline-flex;
   align-items: center;
   justify-content: center;
   gap: 8px;
+  border: 1px solid var(--primary);
   border-radius: 6px;
-  background: var(--primary);
-  color: #fff;
   font-size: 14px;
   font-weight: 760;
-  transition: background .2s ease;
+  transition: background .2s ease, color .2s ease;
 }
-.download-button:hover { background: var(--primary-dark); }
-.download-button:focus-visible, .language-switch button:focus-visible { outline: 3px solid #9fc3ed; outline-offset: 2px; }
+.download-button { background: #fff; color: var(--primary-dark); }
+.download-button:hover { background: var(--primary-soft); }
+.registration-button { background: var(--primary); color: #fff; }
+.registration-button:hover { background: var(--primary-dark); }
+.hero-action-button:focus-visible, .language-switch button:focus-visible { outline: 3px solid #9fc3ed; outline-offset: 2px; }
 
 .document-area { background: #fff; }
 .document-container { max-width: 960px; padding-top: 64px; padding-bottom: 96px; }
@@ -169,7 +176,8 @@ h1, h2, h3, h4 { line-height: 1.25; }
   .hero-primary h1 { font-size: 38px; overflow-wrap: anywhere; }
   .hero-title-en { font-size: 16px; }
   .hero-slogan { font-size: 20px; }
-  .download-button { width: 100%; }
+  .hero-actions { grid-template-columns: 1fr; }
+  .hero-action-button { width: 100%; }
   .document-container { padding-top: 48px; padding-bottom: 72px; }
   .document-toolbar { align-items: stretch; flex-direction: column; gap: 18px; }
   .language-switch { width: 100%; }
