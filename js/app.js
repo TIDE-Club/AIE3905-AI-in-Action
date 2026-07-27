@@ -1,6 +1,7 @@
 (function () {
   const DATA = window.LECTURE_DATA || { course: {}, documents: { zh: [], en: [] } };
   const app = document.getElementById('app');
+  const languageSwitch = document.getElementById('language-switch');
   const DOWNLOAD_URL = './assets/files/AIE3905-20260701.pdf';
   const REGISTRATION_URL = 'https://tideclub26.feishu.cn/share/base/form/shrcn751dWIgzJimMjFGiXvSThd';
   let activeLanguage = 'zh';
@@ -20,7 +21,7 @@
     if (index === 1) return 'document-title';
     if (block.style === 'Heading 1' || text === 'Course Features' || text === 'Parallel Classes') return 'heading';
     if (block.style === 'Heading 2' || /^平行教学班S\d/.test(text) || /^Parallel Class (Section|Session) S\d/.test(text)) return 'section-title';
-    if (/^合作书院[:：]/.test(text) || /^Collaboration with /.test(text)) return 'partner';
+    if (/^合作(?:书院|单位)[:：]/.test(text) || /^(?:Collaboration with |Collaboration Unit:)/.test(text)) return 'partner';
     if (/^·/.test(text)) return 'feature';
     if (language === 'en' && /^\d+\./.test(text)) return 'feature';
     return 'paragraph';
@@ -63,12 +64,20 @@
     const units = isEnglish ? course.unitsEn : course.units;
     const hours = isEnglish ? course.hoursEn : course.hours;
     const format = isEnglish ? course.formatEn : course.format;
-    const downloadLabel = isEnglish ? 'Download Course Information' : '下载课程信息文件';
-    const registrationLabel = isEnglish ? 'Course Registration' : '课程报名';
+    const downloadLabel = isEnglish ? 'Download official course outline' : '下载官方课程大纲';
     const heroMetaLabel = isEnglish ? 'Course details' : '课程基本信息';
     const languageSwitchLabel = isEnglish ? 'Select course information language' : '选择课程信息语言';
+    const applicationNotice = isEnglish
+      ? `Each session is limited to 20 students. Placements will be made based on applications, and interviews may be arranged if needed. Please fill in the <a href="${REGISTRATION_URL}" target="_blank" rel="noopener noreferrer">[Application Form]</a>.`
+      : `每个教学班仅开放20个名额，教学团队会根据报名情况进行合理分班，如有必要，还将安排面试。请填<a href="${REGISTRATION_URL}" target="_blank" rel="noopener noreferrer">【报名表】</a>。`;
 
     document.documentElement.lang = documentLanguage;
+    languageSwitch?.setAttribute('aria-label', languageSwitchLabel);
+    languageSwitch?.querySelectorAll('[data-language]').forEach(button => {
+      const isActive = button.dataset.language === activeLanguage;
+      button.classList.toggle('active', isActive);
+      button.setAttribute('aria-pressed', String(isActive));
+    });
 
     app.innerHTML = `<div class="fade-in">
       <section class="course-hero">
@@ -91,11 +100,8 @@
                 <span aria-hidden="true">↓</span>
                 ${downloadLabel}
               </a>
-              <a class="hero-action-button registration-button" href="${REGISTRATION_URL}" target="_blank" rel="noopener noreferrer">
-                ${registrationLabel}
-                <span aria-hidden="true">→</span>
-              </a>
             </div>
+            <p class="application-notice">${applicationNotice}</p>
           </div>
         </div>
       </section>
@@ -107,10 +113,6 @@
               <span class="eyebrow">AIE 3905</span>
               <h2>${languageLabel}</h2>
             </div>
-            <div class="language-switch" role="group" aria-label="${languageSwitchLabel}">
-              <button type="button" data-language="zh" class="${activeLanguage === 'zh' ? 'active' : ''}" aria-pressed="${activeLanguage === 'zh'}">中文</button>
-              <button type="button" data-language="en" class="${activeLanguage === 'en' ? 'active' : ''}" aria-pressed="${activeLanguage === 'en'}">English</button>
-            </div>
           </div>
           <article class="course-document" lang="${documentLanguage}">
             ${renderDocument(activeLanguage)}
@@ -119,15 +121,16 @@
       </section>
     </div>`;
 
-    document.querySelectorAll('[data-language]').forEach(button => {
-      button.addEventListener('click', () => {
-        const nextLanguage = button.dataset.language;
-        if (nextLanguage === activeLanguage) return;
-        activeLanguage = nextLanguage;
-        renderPage();
-      });
-    });
   }
+
+  languageSwitch?.addEventListener('click', event => {
+    const button = event.target.closest('[data-language]');
+    if (!button) return;
+    const nextLanguage = button.dataset.language;
+    if (nextLanguage === activeLanguage) return;
+    activeLanguage = nextLanguage;
+    renderPage();
+  });
 
   renderPage();
 })();

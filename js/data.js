@@ -39,16 +39,19 @@ window.LECTURE_DATA = {
         "text": "课程特色"
       },
       {
+        "listItem": true,
         "style": "Normal",
-        "text": "·  跨学科：融合人工智能与艺术、教育、社会治理、产业合作、公共文化等多个领域，强调知识整合与跨领域协作。 "
+        "text": "跨学科：融合人工智能与艺术、教育、社会治理、产业合作、公共文化等多个领域，强调知识整合与跨领域协作。 "
       },
       {
+        "listItem": true,
         "style": "Normal",
-        "text": "·  真实实践：围绕真实场景、真实需求和真实利益相关者开展项目实践，完成从问题发现到成果展示与影响评估的完整实践闭环。 "
+        "text": "真实实践：围绕真实场景、真实需求和真实利益相关者开展项目实践，完成从问题发现到成果展示与影响评估的完整实践闭环。 "
       },
       {
+        "listItem": true,
         "style": "Normal",
-        "text": "·  AI赋能：将人工智能作为创新工具和实践手段，帮助学生提升创意表达、问题分析、方案设计和社会服务能力。"
+        "text": "AI赋能：将人工智能作为创新工具和实践手段，帮助学生提升创意表达、问题分析、方案设计和社会服务能力。"
       },
       {
         "style": "Heading 1",
@@ -155,6 +158,10 @@ window.LECTURE_DATA = {
         "text": "平行教学班S05：《AI与视觉交互艺术》"
       },
       {
+        "style": "Normal",
+        "text": "合作单位：大学艺术中心"
+      },
+      {
         "style": "Body Text",
         "text": "本平行教学班聚焦人工智能、视觉艺术、交互媒体与数字创意的深度融合，采用“理论讲授、AI编程实践、艺术工作坊、项目创作与公共展演”相结合的教学模式，引导学生利用人工智能与创意编程技术完成具有艺术表达力和交互体验的视觉艺术作品创作。课程涵盖生成式人工智能、创意编程（Creative Coding）、计算机视觉、实时图形、交互装置、大语言模型、多模态交互、智能艺术系统等前沿技术，培养学生将AI技术转化为公共艺术表达和文化传播作品的能力。"
       },
@@ -189,14 +196,17 @@ window.LECTURE_DATA = {
         "text": "Course Features"
       },
       {
+        "listItem": true,
         "style": "Normal (Web)",
         "text": "Interdisciplinary: Integrates artificial intelligence with diverse fields such as the arts, education, social governance, industry collaboration, and public culture, emphasizing knowledge integration and cross-disciplinary collaboration."
       },
       {
+        "listItem": true,
         "style": "Normal (Web)",
         "text": "Real-World Practice: Engages students in authentic projects grounded in real-world contexts, genuine needs, and interactions with real stakeholders, guiding them through the full cycle from problem discovery and solution development to public presentation and impact evaluation."
       },
       {
+        "listItem": true,
         "style": "Normal (Web)",
         "text": "AI-Enabled: Positions artificial intelligence as a tool for innovation and practice, empowering students to strengthen their capabilities in creative expression, problem analysis, solution design, and socially impactful applications."
       },
@@ -307,6 +317,10 @@ window.LECTURE_DATA = {
       {
         "style": "Normal",
         "text": "Parallel Class Section S05: AI and Visual Interactive Arts"
+      },
+      {
+        "style": "Normal",
+        "text": "Collaboration Unit: University Arts Center"
       },
       {
         "style": "Body Text",
