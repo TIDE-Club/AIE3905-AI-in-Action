@@ -4,7 +4,8 @@
   const languageSwitch = document.getElementById('language-switch');
   const DOWNLOAD_URL = './assets/files/AIE3905-20260701.pdf';
   const REGISTRATION_URL = 'https://tideclub26.feishu.cn/share/base/form/shrcn751dWIgzJimMjFGiXvSThd';
-  let activeLanguage = 'zh';
+  const requestedLanguage = new URLSearchParams(window.location.search).get('lang');
+  let activeLanguage = requestedLanguage === 'en' ? 'en' : 'zh';
 
   function esc(value) {
     return String(value ?? '')
@@ -28,6 +29,10 @@
   }
 
   function renderBlock(block, index, language) {
+    if (block.href) {
+      return `<a class="document-resource-link" href="${esc(block.href)}"><span>${esc(block.text)}</span><span aria-hidden="true">→</span></a>`;
+    }
+
     const type = blockType(block, index, language);
     const text = esc(block.text);
     if (type === 'document-kicker') return `<p class="document-kicker">${text}</p>`;
@@ -129,6 +134,7 @@
     const nextLanguage = button.dataset.language;
     if (nextLanguage === activeLanguage) return;
     activeLanguage = nextLanguage;
+    window.history.replaceState({}, '', `?lang=${activeLanguage}`);
     renderPage();
   });
 
