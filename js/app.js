@@ -73,8 +73,8 @@
     const heroMetaLabel = isEnglish ? 'Course details' : '课程基本信息';
     const languageSwitchLabel = isEnglish ? 'Select course information language' : '选择课程信息语言';
     const applicationNotice = isEnglish
-      ? `Each session is limited to 20 students. Placements will be made based on applications, and interviews may be arranged if needed. Please fill in the <a href="${REGISTRATION_URL}" target="_blank" rel="noopener noreferrer">[Application Form]</a>.`
-      : `每个教学班仅开放20个名额，教学团队会根据报名情况进行合理分班，如有必要，还将安排面试。请填<a href="${REGISTRATION_URL}" target="_blank" rel="noopener noreferrer">【报名表】</a>。`;
+      ? `Each session is capped at 20 students to ensure an optimal learning experience for everyone. Placements will be made based on applications, and interviews may be arranged if needed. Please fill in the <a href="${REGISTRATION_URL}" target="_blank" rel="noopener noreferrer">[Application Form]</a>.`
+      : `为确保教学效果，每个教学班仅开放20个名额，教学团队会根据报名情况进行合理分班，如有必要，还将安排面试。请填<a href="${REGISTRATION_URL}" target="_blank" rel="noopener noreferrer">【报名表】</a>。`;
 
     document.documentElement.lang = documentLanguage;
     languageSwitch?.setAttribute('aria-label', languageSwitchLabel);
