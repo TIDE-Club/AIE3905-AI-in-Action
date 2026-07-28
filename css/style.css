@@ -127,8 +127,15 @@ h1, h2, h3, h4 { line-height: 1.25; }
 }
 .document-toolbar h2 { font-size: 30px; }
 .eyebrow { display: block; margin-bottom: 8px; color: var(--primary); font-size: 12px; font-weight: 800; }
+.document-resource-line {
+  margin-top: 14px;
+  color: #35445a;
+  font-size: 16px;
+  line-height: 1.9;
+  text-align: justify;
+}
+.course-document[lang="en"] .document-resource-line { line-height: 1.78; text-align: left; }
 .document-resource-link {
-  margin-top: 28px;
   display: inline-flex;
   align-items: center;
   gap: 8px;
@@ -138,7 +145,7 @@ h1, h2, h3, h4 { line-height: 1.25; }
   text-decoration: underline;
   text-underline-offset: 4px;
 }
-.document-resource-link + .document-heading { margin-top: 30px; }
+.document-resource-line + .document-heading { margin-top: 30px; }
 .language-switch { display: inline-grid; grid-template-columns: 1fr 1fr; padding: 3px; border: 1px solid var(--line); border-radius: 7px; background: var(--surface-soft); }
 .language-switch button {
   min-width: 86px;
@@ -260,6 +267,7 @@ h1, h2, h3, h4 { line-height: 1.25; }
   .document-heading { margin-top: 38px; font-size: 23px; }
   .document-section-title { margin-top: 32px; font-size: 19px; overflow-wrap: anywhere; }
   .document-paragraph { font-size: 15px; text-align: left; }
+  .document-resource-line { font-size: 15px; text-align: left; }
   .document-list li { font-size: 15px; }
   .mentor-hero-inner { padding-top: 36px; padding-bottom: 38px; }
   .mentor-hero h1 { font-size: 34px; overflow-wrap: anywhere; }

@@ -31,7 +31,8 @@
 
   function renderBlock(block, index, language) {
     if (block.href) {
-      return `<a class="document-resource-link" href="${esc(block.href)}"><span>${esc(block.text)}</span><span aria-hidden="true">→</span></a>`;
+      const lead = block.lead ? `${esc(block.lead)} ` : '';
+      return `<p class="document-resource-line">${lead}<a class="document-resource-link" href="${esc(block.href)}"><span>${esc(block.text)}</span><span aria-hidden="true">→</span></a></p>`;
     }
 
     const type = blockType(block, index, language);
