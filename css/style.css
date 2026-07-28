@@ -160,6 +160,16 @@ h1, h2, h3, h4 { line-height: 1.25; }
 .course-document { max-width: 820px; margin: 0 auto; padding-top: 52px; }
 .document-kicker { color: var(--primary); font-size: 14px; font-weight: 750; text-align: center; }
 .document-title { margin-top: 10px; margin-bottom: 32px; font-size: 34px; text-align: center; }
+.session-summary-heading { color: var(--text); font-size: 15px; font-weight: 800; }
+.document-list.session-summary-list {
+  margin-top: 10px;
+  padding: 13px 20px 13px 38px;
+  border-left: 3px solid var(--primary);
+  background: var(--surface-soft);
+}
+.document-list.session-summary-list li { margin-top: 4px; font-size: 15px; line-height: 1.65; }
+.course-document[lang="en"] .document-list.session-summary-list li { line-height: 1.65; }
+.document-list.session-summary-list + .document-paragraph { margin-top: 28px; }
 .document-heading { margin-top: 46px; margin-bottom: 18px; padding-bottom: 10px; border-bottom: 1px solid var(--line); font-size: 25px; }
 .document-section-title { margin-top: 38px; margin-bottom: 10px; color: var(--primary-dark); font-size: 21px; }
 .document-paragraph { margin-top: 14px; color: #35445a; font-size: 16px; line-height: 1.9; text-align: justify; }
@@ -167,12 +177,18 @@ h1, h2, h3, h4 { line-height: 1.25; }
 .document-partner {
   margin: 9px 0 18px;
   padding: 9px 12px;
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 6px 20px;
   border-left: 3px solid var(--primary);
   background: var(--primary-soft);
   color: #344c69;
   font-size: 14px;
   font-weight: 750;
 }
+.document-instructor { margin-left: auto; color: var(--primary-dark); text-align: right; }
 .document-feature {
   margin-top: 9px;
   color: #3e4d62;

@@ -20,6 +20,7 @@
     const text = block.text || '';
     if (index === 0) return 'document-kicker';
     if (index === 1) return 'document-title';
+    if (block.style === 'Session Summary') return 'session-summary';
     if (block.style === 'Heading 1' || text === 'Course Features' || text === 'Parallel Classes') return 'heading';
     if (block.style === 'Heading 2' || /^平行教学班S\d/.test(text) || /^Parallel Class (Section|Session) S\d/.test(text)) return 'section-title';
     if (/^合作(?:书院|单位)[:：]/.test(text) || /^(?:Collaboration with |Collaboration Unit:)/.test(text)) return 'partner';
@@ -37,9 +38,15 @@
     const text = esc(block.text);
     if (type === 'document-kicker') return `<p class="document-kicker">${text}</p>`;
     if (type === 'document-title') return `<h2 class="document-title">${text}</h2>`;
+    if (type === 'session-summary') return `<p class="session-summary-heading">${text}</p>`;
     if (type === 'heading') return `<h3 class="document-heading">${text}</h3>`;
     if (type === 'section-title') return `<h4 class="document-section-title">${text}</h4>`;
-    if (type === 'partner') return `<p class="document-partner">${text}</p>`;
+    if (type === 'partner') {
+      const instructor = block.instructor
+        ? `<span class="document-instructor">${esc(block.instructor)}</span>`
+        : '';
+      return `<p class="document-partner"><span>${text}</span>${instructor}</p>`;
+    }
     if (type === 'feature') return `<p class="document-feature">${text}</p>`;
     return `<p class="document-paragraph">${text}</p>`;
   }
@@ -47,11 +54,13 @@
   function renderDocument(language) {
     const blocks = DATA.documents?.[language] || [];
     return blocks.map((block, index) => {
-      if (!block.listItem) return renderBlock(block, index, language);
+      const listProperty = block.sessionItem ? 'sessionItem' : 'listItem';
+      if (!block[listProperty]) return renderBlock(block, index, language);
 
-      const opensList = !blocks[index - 1]?.listItem;
-      const closesList = !blocks[index + 1]?.listItem;
-      return `${opensList ? '<ul class="document-list">' : ''}<li>${esc(block.text)}</li>${closesList ? '</ul>' : ''}`;
+      const opensList = !blocks[index - 1]?.[listProperty];
+      const closesList = !blocks[index + 1]?.[listProperty];
+      const listClass = block.sessionItem ? 'document-list session-summary-list' : 'document-list';
+      return `${opensList ? `<ul class="${listClass}">` : ''}<li>${esc(block.text)}</li>${closesList ? '</ul>' : ''}`;
     }).join('');
   }
 
@@ -67,8 +76,7 @@
     const primarySlogan = isEnglish ? course.sloganEn : course.slogan;
     const secondarySlogan = isEnglish ? course.slogan : course.sloganEn;
     const units = isEnglish ? course.unitsEn : course.units;
-    const hours = isEnglish ? course.hoursEn : course.hours;
-    const format = isEnglish ? course.formatEn : course.format;
+    const formats = (isEnglish ? course.formatsEn : course.formats) || [];
     const downloadLabel = isEnglish ? 'Download official course outline' : '下载官方课程大纲';
     const heroMetaLabel = isEnglish ? 'Course details' : '课程基本信息';
     const languageSwitchLabel = isEnglish ? 'Select course information language' : '选择课程信息语言';
@@ -97,8 +105,7 @@
             <p class="hero-slogan-secondary">${esc(secondarySlogan)}</p>
             <div class="hero-meta" aria-label="${heroMetaLabel}">
               <span>${esc(units)}</span>
-              <span>${esc(hours)}</span>
-              <span>${esc(format)}</span>
+              ${formats.map(format => `<span>${esc(format)}</span>`).join('')}
             </div>
             <div class="hero-actions">
               <a class="hero-action-button download-button" href="${DOWNLOAD_URL}" download="AIE3905-20260701.pdf">

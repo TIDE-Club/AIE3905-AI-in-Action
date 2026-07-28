@@ -9,10 +9,8 @@ window.LECTURE_DATA = {
     "termEn": "Fall 2026",
     "units": "3 学分",
     "unitsEn": "3 Credits",
-    "hours": "每周 3 小时",
-    "hoursEn": "3 Hours per Week",
-    "format": "讲座、实验 / 工作坊与实地考察",
-    "formatEn": "Lectures, Labs / Workshops and Field Trips",
+    "formats": ["讲座", "实验 / 工作坊", "实地考察"],
+    "formatsEn": ["Lectures", "Labs / Workshops", "Field Trips"],
     "slogan": "在真实世界中学习AI，在实践中理解AI",
     "sloganEn": "AI in the Real World, Learning by Doing."
   },
@@ -25,6 +23,35 @@ window.LECTURE_DATA = {
       {
         "style": "Heading 1",
         "text": "AIE3905《AI与社会实践I》"
+      },
+      {
+        "style": "Session Summary",
+        "text": "五个平行教学班概览"
+      },
+      {
+        "sessionItem": true,
+        "style": "Normal",
+        "text": "S01 · AI赋能校园治理与学生社群"
+      },
+      {
+        "sessionItem": true,
+        "style": "Normal",
+        "text": "S02 · 人工智能赋能社会公益（对标联合国可持续发展目标）"
+      },
+      {
+        "sessionItem": true,
+        "style": "Normal",
+        "text": "S03 · 人工智能赋能校企合作：共建大学与区域产业创新生态"
+      },
+      {
+        "sessionItem": true,
+        "style": "Normal",
+        "text": "S04 · AI赋能戏剧共创与公共表达"
+      },
+      {
+        "sessionItem": true,
+        "style": "Normal",
+        "text": "S05 · AI与视觉交互艺术"
       },
       {
         "style": "Normal",
@@ -68,7 +95,8 @@ window.LECTURE_DATA = {
       },
       {
         "style": "Normal",
-        "text": "合作书院：祥波书院"
+        "text": "合作书院：祥波书院",
+        "instructor": "任课教师：黄建华"
       },
       {
         "style": "Normal",
@@ -108,7 +136,8 @@ window.LECTURE_DATA = {
       },
       {
         "style": "Normal",
-        "text": "合作书院：思廷书院"
+        "text": "合作书院：思廷书院",
+        "instructor": "任课教师：陈子颂"
       },
       {
         "style": "Normal",
@@ -124,7 +153,8 @@ window.LECTURE_DATA = {
       },
       {
         "style": "Normal",
-        "text": "合作书院：学勤书院"
+        "text": "合作书院：学勤书院",
+        "instructor": "任课教师：黄旭"
       },
       {
         "style": "Normal",
@@ -140,7 +170,8 @@ window.LECTURE_DATA = {
       },
       {
         "style": "Normal",
-        "text": "合作书院：学勤书院"
+        "text": "合作书院：学勤书院",
+        "instructor": "任课教师：陈子颂"
       },
       {
         "style": "Normal",
@@ -164,7 +195,8 @@ window.LECTURE_DATA = {
       },
       {
         "style": "Normal",
-        "text": "合作单位：大学艺术中心"
+        "text": "合作单位：大学艺术中心",
+        "instructor": "任课教师：庞硕"
       },
       {
         "style": "Body Text",
@@ -186,7 +218,36 @@ window.LECTURE_DATA = {
       },
       {
         "style": "Heading 1",
-        "text": "AIE3905《AI and Society in Action I》"
+        "text": "AIE3905 AI and Society in Action I"
+      },
+      {
+        "style": "Session Summary",
+        "text": "Five Parallel Classes at a Glance"
+      },
+      {
+        "sessionItem": true,
+        "style": "Normal",
+        "text": "S01 · AI-Enabled Campus Governance and Student Communities"
+      },
+      {
+        "sessionItem": true,
+        "style": "Normal",
+        "text": "S02 · AI for Social Good (Aligned with UN Sustainable Development Goals)"
+      },
+      {
+        "sessionItem": true,
+        "style": "Normal",
+        "text": "S03 · AI-Enabled University–Industry Collaboration: Building an Innovation Ecosystem for Universities and Regional Industries"
+      },
+      {
+        "sessionItem": true,
+        "style": "Normal",
+        "text": "S04 · AI-Empowered Drama Co-Creation and Public Expression"
+      },
+      {
+        "sessionItem": true,
+        "style": "Normal",
+        "text": "S05 · AI and Visual Interactive Arts"
       },
       {
         "style": "Normal (Web)",
@@ -230,7 +291,8 @@ window.LECTURE_DATA = {
       },
       {
         "style": "Normal",
-        "text": "Collaboration with Harmonia College"
+        "text": "Collaboration with Harmonia College",
+        "instructor": "Instructor: Jianhua Huang"
       },
       {
         "style": "Normal",
@@ -270,7 +332,8 @@ window.LECTURE_DATA = {
       },
       {
         "style": "Normal",
-        "text": "Collaboration with Muse College"
+        "text": "Collaboration with Muse College",
+        "instructor": "Instructor: Zisong Chen"
       },
       {
         "style": "Normal",
@@ -286,7 +349,8 @@ window.LECTURE_DATA = {
       },
       {
         "style": "Normal",
-        "text": "Collaboration with Diligentia College"
+        "text": "Collaboration with Diligentia College",
+        "instructor": "Instructor: Xu Huang"
       },
       {
         "style": "Normal",
@@ -302,7 +366,8 @@ window.LECTURE_DATA = {
       },
       {
         "style": "Normal",
-        "text": "Collaboration with Diligentia College"
+        "text": "Collaboration with Diligentia College",
+        "instructor": "Instructor: Zisong Chen"
       },
       {
         "style": "Normal",
@@ -330,7 +395,8 @@ window.LECTURE_DATA = {
       },
       {
         "style": "Normal",
-        "text": "Collaboration with University Arts Center"
+        "text": "Collaboration with University Arts Center",
+        "instructor": "Instructor: Shuo Pang"
       },
       {
         "style": "Body Text",
