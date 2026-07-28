@@ -84,6 +84,9 @@
     const applicationNotice = isEnglish
       ? `Each session is capped at 20 students to ensure an optimal learning experience for everyone. Placements will be made based on applications, and interviews may be arranged if needed. Please fill in the <a href="${REGISTRATION_URL}" target="_blank" rel="noopener noreferrer">[Application Form]</a>.`
       : `为确保教学效果，每个教学班仅开放20个名额，教学团队会根据报名情况进行合理分班，如有必要，还将安排面试。请填<a href="${REGISTRATION_URL}" target="_blank" rel="noopener noreferrer">【报名表】</a>。`;
+    const applicationTip = isEnglish
+      ? 'Presenting innovative ideas in your application will significantly increase your chances of being selected.'
+      : '在申请表中展现具有创新性的设想，将显著提升您的入选概率。';
 
     document.documentElement.lang = documentLanguage;
     languageSwitch?.setAttribute('aria-label', languageSwitchLabel);
@@ -114,7 +117,7 @@
                 ${downloadLabel}
               </a>
             </div>
-            <p class="application-notice">${applicationNotice}</p>
+            <p class="application-notice">${applicationNotice}<br>${applicationTip}</p>
           </div>
         </div>
       </section>
