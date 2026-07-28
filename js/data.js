@@ -62,6 +62,10 @@ window.LECTURE_DATA = {
         "text": "2026年秋季学期，AIE3905将探索人工智能学院与书院协同开课的新模式。人工智能学院负责安排任课教师，合作书院将组织隶属导师担任教学班导师，共同参与课程建设与人才培养，充分发挥学院专业教育与书院育人体系协同育人的优势。"
       },
       {
+        "style": "Normal",
+        "text": "教学班导师将与任课教师共同组建教学团队，协同指导学生产出具有社会影响力的成果。"
+      },
+      {
         "style": "Resource Link",
         "text": "教学班导师职责",
         "href": "./mentor-responsibilities.html?lang=zh"
@@ -258,6 +262,10 @@ window.LECTURE_DATA = {
         "text": "In the fall semester of 2026, AIE3905 will pilot a new model of collaborative course delivery between the School of Artificial Intelligence and the residential colleges. The School of Artificial Intelligence will be responsible for appointing the lead instructors, while the partnering residential colleges will organize voluntary sign-ups among their affiliated mentors to serve as class mentors. This joint effort aims to strengthen course development and talent cultivation, fully leveraging the complementary strengths of discipline-based education and the college-based holistic development system."
       },
       {
+        "style": "Normal (Web)",
+        "text": "The class mentors, in collaboration with the course instructors, will establish a teaching team to guide students toward achieving results with significant social influence."
+      },
+      {
         "style": "Resource Link",
         "text": "Roles and Responsibilities of Class Mentors",
         "href": "./mentor-responsibilities.html?lang=en"
@@ -292,7 +300,7 @@ window.LECTURE_DATA = {
       {
         "style": "Normal",
         "text": "Collaboration with Harmonia College",
-        "instructor": "Instructor: Jianhua Huang"
+        "instructor": "Instructor: Jianhua HUANG"
       },
       {
         "style": "Normal",
@@ -333,7 +341,7 @@ window.LECTURE_DATA = {
       {
         "style": "Normal",
         "text": "Collaboration with Muse College",
-        "instructor": "Instructor: Zisong Chen"
+        "instructor": "Instructor: Marcus CHAN"
       },
       {
         "style": "Normal",
@@ -350,7 +358,7 @@ window.LECTURE_DATA = {
       {
         "style": "Normal",
         "text": "Collaboration with Diligentia College",
-        "instructor": "Instructor: Xu Huang"
+        "instructor": "Instructor: Xu HUANG"
       },
       {
         "style": "Normal",
@@ -367,7 +375,7 @@ window.LECTURE_DATA = {
       {
         "style": "Normal",
         "text": "Collaboration with Diligentia College",
-        "instructor": "Instructor: Zisong Chen"
+        "instructor": "Instructor: Marcus CHAN"
       },
       {
         "style": "Normal",
@@ -396,7 +404,7 @@ window.LECTURE_DATA = {
       {
         "style": "Normal",
         "text": "Collaboration with University Arts Center",
-        "instructor": "Instructor: Shuo Pang"
+        "instructor": "Instructor: Shuo PANG"
       },
       {
         "style": "Body Text",
