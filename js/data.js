@@ -299,8 +299,11 @@ window.LECTURE_DATA = {
       {
         "style": "Normal",
         "text": "Collaboration with Harmonia College",
-        "meetingTime": "Class meeting time: Monday 18:00-21:00",
-        "instructor": "Instructor: Jianhua HUANG"
+        "details": [
+          { "label": "Collaboration with", "value": "Harmonia College" },
+          { "label": "Class meeting time:", "value": "Monday 18:00-21:00" },
+          { "label": "Instructor:", "value": "Jianhua HUANG" }
+        ]
       },
       {
         "style": "Normal",
@@ -341,8 +344,11 @@ window.LECTURE_DATA = {
       {
         "style": "Normal",
         "text": "Collaboration with Muse College",
-        "meetingTime": "Class meeting time: Monday 13:30-16:30",
-        "instructor": "Instructor: Marcus CHAN"
+        "details": [
+          { "label": "Collaboration with", "value": "Muse College" },
+          { "label": "Class meeting time:", "value": "Monday 13:30-16:30" },
+          { "label": "Instructor:", "value": "Marcus CHAN" }
+        ]
       },
       {
         "style": "Normal",
@@ -359,8 +365,11 @@ window.LECTURE_DATA = {
       {
         "style": "Normal",
         "text": "Collaboration with Diligentia College",
-        "meetingTime": "Class meeting time: Thursday 13:30-16:30",
-        "instructor": "Instructor: Xu HUANG"
+        "details": [
+          { "label": "Collaboration with", "value": "Diligentia College" },
+          { "label": "Class meeting time:", "value": "Thursday 13:30-16:30" },
+          { "label": "Instructor:", "value": "Xu HUANG" }
+        ]
       },
       {
         "style": "Normal",
@@ -377,8 +386,11 @@ window.LECTURE_DATA = {
       {
         "style": "Normal",
         "text": "Collaboration with Diligentia College",
-        "meetingTime": "Class meeting time: Tuesday 13:30-16:30",
-        "instructor": "Instructor: Marcus CHAN"
+        "details": [
+          { "label": "Collaboration with", "value": "Diligentia College" },
+          { "label": "Class meeting time:", "value": "Tuesday 13:30-16:30" },
+          { "label": "Instructor:", "value": "Marcus CHAN" }
+        ]
       },
       {
         "style": "Normal",
@@ -407,8 +419,11 @@ window.LECTURE_DATA = {
       {
         "style": "Normal",
         "text": "Collaboration with University Arts Center",
-        "meetingTime": "Class meeting time: Wednesday 13:30-16:30",
-        "instructor": "Instructor: Shuo PANG"
+        "details": [
+          { "label": "Collaboration with", "value": "University Arts Center" },
+          { "label": "Class meeting time:", "value": "Wednesday 13:30-16:30" },
+          { "label": "Instructor:", "value": "Shuo PANG" }
+        ]
       },
       {
         "style": "Body Text",

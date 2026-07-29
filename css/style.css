@@ -196,6 +196,15 @@ h1, h2, h3, h4 { line-height: 1.25; }
 }
 .document-meeting-time { justify-self: center; color: #445c79; text-align: center; }
 .document-instructor { justify-self: end; color: var(--primary-dark); text-align: right; }
+.document-partner-stacked {
+  grid-template-columns: minmax(0, 1.1fr) minmax(0, 1.25fr) minmax(0, .8fr);
+  align-items: start;
+}
+.document-partner-field { min-width: 0; display: flex; flex-direction: column; }
+.document-partner-field:nth-child(2) { align-items: center; text-align: center; }
+.document-partner-field:nth-child(3) { align-items: flex-end; text-align: right; }
+.document-partner-label { color: #60748d; font-size: 12px; line-height: 1.35; white-space: nowrap; }
+.document-partner-value { margin-top: 3px; color: var(--primary-dark); font-size: 14px; line-height: 1.45; white-space: nowrap; }
 .document-feature {
   margin-top: 9px;
   color: #3e4d62;
@@ -269,6 +278,7 @@ h1, h2, h3, h4 { line-height: 1.25; }
   .document-paragraph { font-size: 15px; text-align: left; }
   .document-partner { grid-template-columns: 1fr; align-items: start; }
   .document-meeting-time, .document-instructor { justify-self: start; text-align: left; }
+  .document-partner-field:nth-child(2), .document-partner-field:nth-child(3) { align-items: flex-start; text-align: left; }
   .document-resource-line { font-size: 15px; text-align: left; }
   .document-list li { font-size: 15px; }
   .mentor-hero-inner { padding-top: 36px; padding-bottom: 38px; }

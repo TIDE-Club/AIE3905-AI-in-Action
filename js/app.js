@@ -43,6 +43,11 @@
     if (type === 'heading') return `<h3 class="document-heading">${text}</h3>`;
     if (type === 'section-title') return `<h4 class="document-section-title">${text}</h4>`;
     if (type === 'partner') {
+      if (Array.isArray(block.details)) {
+        const details = block.details.map(detail => `<span class="document-partner-field"><span class="document-partner-label">${esc(detail.label)}</span><span class="document-partner-value">${esc(detail.value)}</span></span>`).join('');
+        return `<div class="document-partner document-partner-stacked">${details}</div>`;
+      }
+
       const meetingTime = block.meetingTime
         ? `<span class="document-meeting-time">${esc(block.meetingTime)}</span>`
         : '';
