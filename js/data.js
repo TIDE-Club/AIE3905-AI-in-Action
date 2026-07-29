@@ -97,6 +97,7 @@ window.LECTURE_DATA = {
       {
         "style": "Normal",
         "text": "合作书院：祥波书院",
+        "meetingTime": "上课时间：周一 18:00-21:00",
         "instructor": "任课教师：黄建华"
       },
       {
@@ -138,6 +139,7 @@ window.LECTURE_DATA = {
       {
         "style": "Normal",
         "text": "合作书院：思廷书院",
+        "meetingTime": "上课时间：周一 13:30-16:30",
         "instructor": "任课教师：陈子颂"
       },
       {
@@ -155,6 +157,7 @@ window.LECTURE_DATA = {
       {
         "style": "Normal",
         "text": "合作书院：学勤书院",
+        "meetingTime": "上课时间：周四 13:30-16:30",
         "instructor": "任课教师：黄旭"
       },
       {
@@ -172,6 +175,7 @@ window.LECTURE_DATA = {
       {
         "style": "Normal",
         "text": "合作书院：学勤书院",
+        "meetingTime": "上课时间：周二 13:30-16:30",
         "instructor": "任课教师：陈子颂"
       },
       {
@@ -197,6 +201,7 @@ window.LECTURE_DATA = {
       {
         "style": "Normal",
         "text": "合作单位：大学艺术中心",
+        "meetingTime": "上课时间：周三 13:30-16:30",
         "instructor": "任课教师：庞硕"
       },
       {
@@ -294,6 +299,7 @@ window.LECTURE_DATA = {
       {
         "style": "Normal",
         "text": "Collaboration with Harmonia College",
+        "meetingTime": "Class meeting time: Monday 18:00-21:00",
         "instructor": "Instructor: Jianhua HUANG"
       },
       {
@@ -335,6 +341,7 @@ window.LECTURE_DATA = {
       {
         "style": "Normal",
         "text": "Collaboration with Muse College",
+        "meetingTime": "Class meeting time: Monday 13:30-16:30",
         "instructor": "Instructor: Marcus CHAN"
       },
       {
@@ -352,6 +359,7 @@ window.LECTURE_DATA = {
       {
         "style": "Normal",
         "text": "Collaboration with Diligentia College",
+        "meetingTime": "Class meeting time: Thursday 13:30-16:30",
         "instructor": "Instructor: Xu HUANG"
       },
       {
@@ -369,6 +377,7 @@ window.LECTURE_DATA = {
       {
         "style": "Normal",
         "text": "Collaboration with Diligentia College",
+        "meetingTime": "Class meeting time: Tuesday 13:30-16:30",
         "instructor": "Instructor: Marcus CHAN"
       },
       {
@@ -398,6 +407,7 @@ window.LECTURE_DATA = {
       {
         "style": "Normal",
         "text": "Collaboration with University Arts Center",
+        "meetingTime": "Class meeting time: Wednesday 13:30-16:30",
         "instructor": "Instructor: Shuo PANG"
       },
       {

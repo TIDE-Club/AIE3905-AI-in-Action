@@ -43,10 +43,13 @@
     if (type === 'heading') return `<h3 class="document-heading">${text}</h3>`;
     if (type === 'section-title') return `<h4 class="document-section-title">${text}</h4>`;
     if (type === 'partner') {
+      const meetingTime = block.meetingTime
+        ? `<span class="document-meeting-time">${esc(block.meetingTime)}</span>`
+        : '';
       const instructor = block.instructor
         ? `<span class="document-instructor">${esc(block.instructor)}</span>`
         : '';
-      return `<p class="document-partner"><span>${text}</span>${instructor}</p>`;
+      return `<p class="document-partner"><span>${text}</span>${meetingTime}${instructor}</p>`;
     }
     if (type === 'feature') return `<p class="document-feature">${text}</p>`;
     return `<p class="document-paragraph">${text}</p>`;
