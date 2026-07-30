@@ -3,6 +3,7 @@
   const app = document.getElementById('app');
   const languageSwitch = document.getElementById('language-switch');
   const DOWNLOAD_URL = './assets/files/AIE3905-20260701.pdf';
+  const FAQ_URL = './faq.html';
   const REGISTRATION_URL = 'https://tideclub26.feishu.cn/share/base/form/shrcn751dWIgzJimMjFGiXvSThd';
   const requestedLanguage = new URLSearchParams(window.location.search).get('lang');
   let activeLanguage = requestedLanguage === 'en' ? 'en' : 'zh';
@@ -87,6 +88,7 @@
     const units = isEnglish ? course.unitsEn : course.units;
     const formats = (isEnglish ? course.formatsEn : course.formats) || [];
     const downloadLabel = isEnglish ? 'Download official course outline' : '下载官方课程大纲';
+    const faqLabel = isEnglish ? 'FAQ' : '常见问题（FAQ）';
     const heroMetaLabel = isEnglish ? 'Course details' : '课程基本信息';
     const languageSwitchLabel = isEnglish ? 'Select course information language' : '选择课程信息语言';
     const applicationNotice = isEnglish
@@ -123,6 +125,10 @@
               <a class="hero-action-button download-button" href="${DOWNLOAD_URL}" download="AIE3905-20260701.pdf">
                 <span aria-hidden="true">↓</span>
                 ${downloadLabel}
+              </a>
+              <a class="hero-secondary-link" href="${FAQ_URL}?lang=${activeLanguage}">
+                <span>${faqLabel}</span>
+                <span aria-hidden="true">→</span>
               </a>
             </div>
             <p class="application-notice">${applicationNotice}<br>${applicationTip}</p>
