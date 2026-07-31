@@ -63,6 +63,12 @@ window.LECTURE_DATA = {
       },
       {
         "style": "Resource Link",
+        "lead": "本课程的培养目标、教学安排与评价方式等详细信息，敬请参阅",
+        "text": "官方课程大纲",
+        "href": "./assets/files/AIE3905-20260701.pdf"
+      },
+      {
+        "style": "Resource Link",
         "lead": "教学班导师将与任课教师共同组建教学团队，协同指导学生产出具有社会影响力的成果。",
         "text": "教学班导师职责",
         "href": "./mentor-responsibilities.html?lang=zh"
