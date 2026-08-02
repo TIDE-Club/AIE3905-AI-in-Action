@@ -145,7 +145,7 @@ window.LECTURE_DATA = {
       {
         "style": "Normal",
         "text": "合作书院：思廷书院",
-        "meetingTime": "上课时间：周一 13:30-16:30",
+        "meetingTime": "上课时间：周二 13:30-16:30",
         "instructor": "任课教师：陈子颂"
       },
       {
@@ -181,7 +181,7 @@ window.LECTURE_DATA = {
       {
         "style": "Normal",
         "text": "合作书院：学勤书院",
-        "meetingTime": "上课时间：周二 13:30-16:30",
+        "meetingTime": "上课时间：周一 13:30-16:30",
         "instructor": "任课教师：陈子颂"
       },
       {
@@ -352,7 +352,7 @@ window.LECTURE_DATA = {
         "text": "Collaboration with Muse College",
         "details": [
           { "label": "Collaboration with", "value": "Muse College" },
-          { "label": "Class meeting time:", "value": "Monday 13:30-16:30" },
+          { "label": "Class meeting time:", "value": "Tuesday 13:30-16:30" },
           { "label": "Instructor:", "value": "Marcus CHAN" }
         ]
       },
@@ -394,7 +394,7 @@ window.LECTURE_DATA = {
         "text": "Collaboration with Diligentia College",
         "details": [
           { "label": "Collaboration with", "value": "Diligentia College" },
-          { "label": "Class meeting time:", "value": "Tuesday 13:30-16:30" },
+          { "label": "Class meeting time:", "value": "Monday 13:30-16:30" },
           { "label": "Instructor:", "value": "Marcus CHAN" }
         ]
       },
