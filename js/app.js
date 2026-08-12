@@ -24,7 +24,7 @@
     if (block.style === 'Session Summary') return 'session-summary';
     if (block.style === 'Heading 1' || text === 'Course Features' || text === 'Parallel Classes') return 'heading';
     if (block.style === 'Heading 2' || /^平行教学班S\d/.test(text) || /^Parallel Class (Section|Session) S\d/.test(text)) return 'section-title';
-    if (/^合作(?:书院|单位)[:：]/.test(text) || /^(?:Collaboration with |Collaboration Unit:)/.test(text)) return 'partner';
+    if (Array.isArray(block.details) || /^合作(?:书院|单位)[:：]/.test(text) || /^(?:Collaboration with |Collaboration Unit:)/.test(text)) return 'partner';
     if (/^·/.test(text)) return 'feature';
     if (language === 'en' && /^\d+\./.test(text)) return 'feature';
     return 'paragraph';
@@ -46,7 +46,8 @@
     if (type === 'partner') {
       if (Array.isArray(block.details)) {
         const details = block.details.map(detail => `<span class="document-partner-field"><span class="document-partner-label">${esc(detail.label)}</span><span class="document-partner-value">${esc(detail.value)}</span></span>`).join('');
-        return `<div class="document-partner document-partner-stacked">${details}</div>`;
+        const detailClass = block.details.length === 2 ? ' document-partner-two-fields' : '';
+        return `<div class="document-partner document-partner-stacked${detailClass}">${details}</div>`;
       }
 
       const meetingTime = block.meetingTime

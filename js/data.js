@@ -26,7 +26,7 @@ window.LECTURE_DATA = {
       },
       {
         "style": "Session Summary",
-        "text": "五个平行教学班概览"
+        "text": "六个平行教学班概览"
       },
       {
         "sessionItem": true,
@@ -52,6 +52,11 @@ window.LECTURE_DATA = {
         "sessionItem": true,
         "style": "Normal",
         "text": "S05 · AI与视觉交互艺术"
+      },
+      {
+        "sessionItem": true,
+        "style": "Normal",
+        "text": "S06 · 人工智能赋能校企合作：共建大学与区域产业创新生态"
       },
       {
         "style": "Normal",
@@ -221,6 +226,26 @@ window.LECTURE_DATA = {
       {
         "style": "Body Text",
         "text": "课程最终成果将以AI交互艺术展、AI电影节、数字媒体展演、校园公共艺术装置等多种形式向社会公开展示，持续赋能港中深艺术中心和学校品牌建设，打造具有广泛社会传播力和国际影响力的原创作品，为学校持续输出兼具科技创新与艺术价值的高质量视觉传播内容。通过本课程的学习，学生将建立对“AI+视觉交互艺术”领域的系统认知，掌握AI创意编程、交互艺术设计、视觉叙事、数字内容创作及大型公共展览策划的方法，培养跨学科协作能力、艺术创新能力、科技表达能力以及负责任人工智能创作意识，实现人工智能技术与艺术创意实践的深度融合。"
+      },
+      {
+        "style": "Heading 2",
+        "text": "平行教学班S06：《人工智能赋能校企合作：共建大学与区域产业创新生态》"
+      },
+      {
+        "style": "Normal",
+        "text": "",
+        "details": [
+          { "label": "上课时间", "value": "周二 18:00-21:00" },
+          { "label": "任课教师", "value": "黄建华" }
+        ]
+      },
+      {
+        "style": "Normal",
+        "text": "高校—企业合作是推动科技创新、人才培养和产业发展的重要纽带，也是高校服务区域经济社会发展的重要途径。本平行教学班聚焦人工智能赋能校企合作的新模式，引导学生深入了解企业需求、产业发展和区域创新生态，探索人工智能如何促进高校与企业在人才培养、科研创新、成果转化和社会服务等方面开展更加紧密、高效的合作，为构建开放协同的创新生态贡献智慧与方案。"
+      },
+      {
+        "style": "Normal",
+        "text": "学生将在教师指导下深入企业、产业园区和创新机构，围绕真实需求开展企业参访、需求调研、利益相关方访谈、案例分析和合作方案设计等实践活动，了解校企合作的真实场景与挑战，并围绕香港中文大学（深圳）与区域企业的合作需求，设计具有创新性和可行性的合作项目或机制。课程注重培养学生发现真实问题、开展跨领域沟通、策划合作项目和服务社会发展的能力，使学生在真实实践中从知识学习者成长为校企合作的实践者和创新参与者。"
       }
     ],
     "en": [
@@ -234,7 +259,7 @@ window.LECTURE_DATA = {
       },
       {
         "style": "Session Summary",
-        "text": "Five Parallel Classes at a Glance"
+        "text": "Six Parallel Classes at a Glance"
       },
       {
         "sessionItem": true,
@@ -260,6 +285,11 @@ window.LECTURE_DATA = {
         "sessionItem": true,
         "style": "Normal",
         "text": "S05 · AI and Visual Interactive Arts"
+      },
+      {
+        "sessionItem": true,
+        "style": "Normal",
+        "text": "S06 · AI-Enabled University–Industry Collaboration: Building an Innovation Ecosystem for Universities and Regional Industries"
       },
       {
         "style": "Normal (Web)",
@@ -442,6 +472,26 @@ window.LECTURE_DATA = {
       {
         "style": "Body Text",
         "text": "This class section culminates in the public presentation of student works through events such as AI Interactive Art Exhibitions, AI Film Festivals, digital media showcases, and immersive installation exhibitions hosted jointly by the School of Artificial Intelligence and the University Arts Center. Outstanding projects will be encouraged to participate in internationally recognized interactive media communities, digital art exhibitions, and AI film festivals, fostering global collaboration and creative exchange. By integrating AI technologies with artistic practice, the course develops students' abilities in computational creativity, interdisciplinary collaboration, visual storytelling, interactive system design, and responsible AI innovation, while continuously generating high-impact creative content that strengthens the University's cultural influence and public engagement."
+      },
+      {
+        "style": "Heading 2",
+        "text": "Parallel Class Section S06: AI-Enabled University–Industry Collaboration: Building an Innovation Ecosystem for Universities and Regional Industries"
+      },
+      {
+        "style": "Normal",
+        "text": "",
+        "details": [
+          { "label": "Class meeting time:", "value": "Tuesday 18:00-21:00" },
+          { "label": "Instructor:", "value": "Jianhua HUANG" }
+        ]
+      },
+      {
+        "style": "Normal",
+        "text": "University–industry collaboration is a vital driver of technological innovation, talent development, and industrial growth. It also serves as an important avenue through which universities contribute to regional economic and social development. This parallel class section explores new models of AI-enabled university–industry collaboration, guiding students to gain a deep understanding of industry needs, industrial development, and regional innovation ecosystems. Students will examine how artificial intelligence can foster closer and more effective collaboration between universities and enterprises in areas such as talent cultivation, research and innovation, technology transfer, and community engagement, contributing ideas and practical solutions for building an open, collaborative innovation ecosystem."
+      },
+      {
+        "style": "Normal",
+        "text": "Under the guidance of the instructor, students will engage with companies, industrial parks, and innovation organizations to address real-world challenges through company visits, needs assessments, stakeholder interviews, case studies, and collaborative project design. Drawing on these authentic field experiences, students will explore the opportunities and challenges of university–industry collaboration and develop innovative and feasible collaboration initiatives that support partnerships between The Chinese University of Hong Kong, Shenzhen and regional enterprises. The class emphasizes the ability to identify real-world problems, communicate across disciplines, design collaborative projects, and contribute to society through innovation. Through experiential learning, students will grow from knowledge learners into practitioners and active contributors to university–industry collaboration."
       }
     ]
   }

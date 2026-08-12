@@ -213,6 +213,8 @@ h1, h2, h3, h4 { line-height: 1.25; }
   grid-template-columns: minmax(0, 1.1fr) minmax(0, 1.25fr) minmax(0, .8fr);
   align-items: start;
 }
+.document-partner-two-fields { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+.document-partner-two-fields .document-partner-field:nth-child(2) { align-items: flex-end; text-align: right; }
 .document-partner-field { min-width: 0; display: flex; flex-direction: column; }
 .document-partner-field:nth-child(2) { align-items: center; text-align: center; }
 .document-partner-field:nth-child(3) { align-items: flex-end; text-align: right; }
