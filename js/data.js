@@ -235,8 +235,9 @@ window.LECTURE_DATA = {
         "style": "Normal",
         "text": "",
         "details": [
-          { "label": "上课时间", "value": "周二 18:00-21:00" },
-          { "label": "任课教师", "value": "黄建华" }
+          { "label": "合作书院：", "value": "" },
+          { "label": "上课时间：", "value": "周二 18:00-21:00" },
+          { "label": "任课教师：", "value": "黄建华" }
         ]
       },
       {
@@ -481,6 +482,7 @@ window.LECTURE_DATA = {
         "style": "Normal",
         "text": "",
         "details": [
+          { "label": "Collaboration with", "value": "" },
           { "label": "Class meeting time:", "value": "Tuesday 18:00-21:00" },
           { "label": "Instructor:", "value": "Jianhua HUANG" }
         ]
