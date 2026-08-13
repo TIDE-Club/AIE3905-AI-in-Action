@@ -233,12 +233,9 @@ window.LECTURE_DATA = {
       },
       {
         "style": "Normal",
-        "text": "",
-        "details": [
-          { "label": "合作书院：", "value": "" },
-          { "label": "上课时间：", "value": "周二 18:00-21:00" },
-          { "label": "任课教师：", "value": "黄建华" }
-        ]
+        "text": "合作书院：",
+        "meetingTime": "上课时间：周二 18:00-21:00",
+        "instructor": "任课教师：黄建华"
       },
       {
         "style": "Normal",
