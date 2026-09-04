@@ -50,13 +50,16 @@
         return `<div class="document-partner document-partner-stacked${detailClass}">${details}</div>`;
       }
 
+      const classroom = block.classroom
+        ? `<span class="document-classroom">${esc(block.classroom)}</span>`
+        : '';
       const meetingTime = block.meetingTime
         ? `<span class="document-meeting-time">${esc(block.meetingTime)}</span>`
         : '';
       const instructor = block.instructor
         ? `<span class="document-instructor">${esc(block.instructor)}</span>`
         : '';
-      return `<p class="document-partner"><span>${text}</span>${meetingTime}${instructor}</p>`;
+      return `<p class="document-partner"><span>${text}</span>${classroom}${meetingTime}${instructor}</p>`;
     }
     if (type === 'feature') return `<p class="document-feature">${text}</p>`;
     return `<p class="document-paragraph">${text}</p>`;

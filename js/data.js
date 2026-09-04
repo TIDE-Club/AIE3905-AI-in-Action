@@ -108,6 +108,7 @@ window.LECTURE_DATA = {
       {
         "style": "Normal",
         "text": "合作书院：祥波书院",
+        "classroom": "上课地点：教学楼A栋317",
         "meetingTime": "上课时间：周一 18:00-21:00",
         "instructor": "任课教师：黄建华"
       },
@@ -150,6 +151,7 @@ window.LECTURE_DATA = {
       {
         "style": "Normal",
         "text": "合作书院：思廷书院",
+        "classroom": "上课地点：教学楼A栋316",
         "meetingTime": "上课时间：周二 13:30-16:30",
         "instructor": "任课教师：陈子颂"
       },
@@ -168,6 +170,7 @@ window.LECTURE_DATA = {
       {
         "style": "Normal",
         "text": "合作书院：学勤书院",
+        "classroom": "上课地点：教学楼A栋316",
         "meetingTime": "上课时间：周四 13:30-16:30",
         "instructor": "任课教师：黄旭"
       },
@@ -186,6 +189,7 @@ window.LECTURE_DATA = {
       {
         "style": "Normal",
         "text": "合作书院：学勤书院",
+        "classroom": "上课地点：教学楼A栋316",
         "meetingTime": "上课时间：周一 13:30-16:30",
         "instructor": "任课教师：陈子颂"
       },
@@ -212,6 +216,7 @@ window.LECTURE_DATA = {
       {
         "style": "Normal",
         "text": "合作单位：大学艺术中心",
+        "classroom": "上课地点：教学楼A栋316",
         "meetingTime": "上课时间：周三 13:30-16:30",
         "instructor": "任课教师：庞硕"
       },
@@ -234,6 +239,7 @@ window.LECTURE_DATA = {
       {
         "style": "Normal",
         "text": "合作书院：",
+        "classroom": "上课地点：教学楼A栋317",
         "meetingTime": "上课时间：周二 18:00-21:00",
         "instructor": "任课教师：黄建华"
       },
@@ -335,6 +341,7 @@ window.LECTURE_DATA = {
         "text": "Collaboration with Harmonia College",
         "details": [
           { "label": "Collaboration with", "value": "Harmonia College" },
+          { "label": "Classroom:", "value": "Teaching A Bldg 317" },
           { "label": "Class meeting time:", "value": "Monday 18:00-21:00" },
           { "label": "Instructor:", "value": "Jianhua HUANG" }
         ]
@@ -380,6 +387,7 @@ window.LECTURE_DATA = {
         "text": "Collaboration with Muse College",
         "details": [
           { "label": "Collaboration with", "value": "Muse College" },
+          { "label": "Classroom:", "value": "Teaching A Bldg 316" },
           { "label": "Class meeting time:", "value": "Tuesday 13:30-16:30" },
           { "label": "Instructor:", "value": "Marcus CHAN" }
         ]
@@ -401,6 +409,7 @@ window.LECTURE_DATA = {
         "text": "Collaboration with Diligentia College",
         "details": [
           { "label": "Collaboration with", "value": "Diligentia College" },
+          { "label": "Classroom:", "value": "Teaching A Bldg 316" },
           { "label": "Class meeting time:", "value": "Thursday 13:30-16:30" },
           { "label": "Instructor:", "value": "Xu HUANG" }
         ]
@@ -422,6 +431,7 @@ window.LECTURE_DATA = {
         "text": "Collaboration with Diligentia College",
         "details": [
           { "label": "Collaboration with", "value": "Diligentia College" },
+          { "label": "Classroom:", "value": "Teaching A Bldg 316" },
           { "label": "Class meeting time:", "value": "Monday 13:30-16:30" },
           { "label": "Instructor:", "value": "Marcus CHAN" }
         ]
@@ -455,6 +465,7 @@ window.LECTURE_DATA = {
         "text": "Collaboration with University Arts Center",
         "details": [
           { "label": "Collaboration with", "value": "University Arts Center" },
+          { "label": "Classroom:", "value": "Teaching A Bldg 316" },
           { "label": "Class meeting time:", "value": "Wednesday 13:30-16:30" },
           { "label": "Instructor:", "value": "Shuo PANG" }
         ]
@@ -480,6 +491,7 @@ window.LECTURE_DATA = {
         "text": "",
         "details": [
           { "label": "Collaboration with", "value": "" },
+          { "label": "Classroom:", "value": "Teaching A Bldg 317" },
           { "label": "Class meeting time:", "value": "Tuesday 18:00-21:00" },
           { "label": "Instructor:", "value": "Jianhua HUANG" }
         ]

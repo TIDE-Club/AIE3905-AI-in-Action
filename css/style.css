@@ -198,7 +198,7 @@ h1, h2, h3, h4 { line-height: 1.25; }
   margin: 9px 0 18px;
   padding: 9px 12px;
   display: grid;
-  grid-template-columns: minmax(0, 1fr) auto minmax(0, 1fr);
+  grid-template-columns: minmax(0, 1.2fr) minmax(0, .9fr) minmax(0, 1fr) minmax(0, .75fr);
   align-items: baseline;
   gap: 8px 18px;
   border-left: 3px solid var(--primary);
@@ -207,17 +207,17 @@ h1, h2, h3, h4 { line-height: 1.25; }
   font-size: 14px;
   font-weight: 750;
 }
-.document-meeting-time { justify-self: center; color: #445c79; text-align: center; }
+.document-classroom, .document-meeting-time { justify-self: center; color: #445c79; text-align: center; white-space: nowrap; }
 .document-instructor { justify-self: end; color: var(--primary-dark); text-align: right; }
 .document-partner-stacked {
-  grid-template-columns: minmax(0, 1.1fr) minmax(0, 1.25fr) minmax(0, .8fr);
+  grid-template-columns: minmax(0, 1.05fr) minmax(0, .95fr) minmax(0, 1.15fr) minmax(0, .75fr);
   align-items: start;
 }
 .document-partner-two-fields { grid-template-columns: repeat(2, minmax(0, 1fr)); }
 .document-partner-two-fields .document-partner-field:nth-child(2) { align-items: flex-end; text-align: right; }
 .document-partner-field { min-width: 0; display: flex; flex-direction: column; }
-.document-partner-field:nth-child(2) { align-items: center; text-align: center; }
-.document-partner-field:nth-child(3) { align-items: flex-end; text-align: right; }
+.document-partner-field:nth-child(2), .document-partner-field:nth-child(3) { align-items: center; text-align: center; }
+.document-partner-field:nth-child(4) { align-items: flex-end; text-align: right; }
 .document-partner-label { color: #60748d; font-size: 12px; line-height: 1.35; white-space: nowrap; }
 .document-partner-value { margin-top: 3px; color: var(--primary-dark); font-size: 14px; line-height: 1.45; white-space: nowrap; }
 .document-feature {
@@ -318,8 +318,8 @@ h1, h2, h3, h4 { line-height: 1.25; }
   .document-section-title { margin-top: 32px; font-size: 19px; overflow-wrap: anywhere; }
   .document-paragraph { font-size: 15px; text-align: left; }
   .document-partner { grid-template-columns: 1fr; align-items: start; }
-  .document-meeting-time, .document-instructor { justify-self: start; text-align: left; }
-  .document-partner-field:nth-child(2), .document-partner-field:nth-child(3) { align-items: flex-start; text-align: left; }
+  .document-classroom, .document-meeting-time, .document-instructor { justify-self: start; text-align: left; }
+  .document-partner-field:nth-child(2), .document-partner-field:nth-child(3), .document-partner-field:nth-child(4) { align-items: flex-start; text-align: left; }
   .document-resource-line { font-size: 15px; text-align: left; }
   .document-list li { font-size: 15px; }
   .mentor-hero-inner { padding-top: 36px; padding-bottom: 38px; }
