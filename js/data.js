@@ -238,7 +238,7 @@ window.LECTURE_DATA = {
       },
       {
         "style": "Normal",
-        "text": "合作书院：",
+        "text": "合作书院：逸夫书院",
         "classroom": "上课地点：教学楼A栋317",
         "meetingTime": "上课时间：周二 18:00-21:00",
         "instructor": "任课教师：黄建华"
@@ -488,9 +488,9 @@ window.LECTURE_DATA = {
       },
       {
         "style": "Normal",
-        "text": "",
+        "text": "Collaboration with Shaw College",
         "details": [
-          { "label": "Collaboration with", "value": "" },
+          { "label": "Collaboration with", "value": "Shaw College" },
           { "label": "Classroom:", "value": "Teaching A Bldg 317" },
           { "label": "Class meeting time:", "value": "Tuesday 18:00-21:00" },
           { "label": "Instructor:", "value": "Jianhua HUANG" }
